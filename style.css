@@ -17,6 +17,10 @@ justify-content: center;
 flex-direction: column;
 }
 
+.headline{
+    margin: 20px;
+}
+
 .input{
     width: 30%;
     border-radius: 5px;
@@ -25,7 +29,16 @@ flex-direction: column;
 }
 
 .button{
-    margin: 10px; 
+    background-color: white;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    color: black; 
 }
 
 .listBox{

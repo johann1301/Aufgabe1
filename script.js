@@ -10,15 +10,6 @@ function getNumbers() {
     const evenNumbers = [];
     const oddNumbers = [];
 
-    // check if Array got an empty item at the beginning or the end
-    if (array[array.length-1] === ''){
-        array.splice(-1)
-    }
-
-    if (array[0] === ''){
-        array.splice(0,1)
-    }
-
     // sort the array
     array.sort(function(a, b){
         return a - b;
@@ -27,16 +18,18 @@ function getNumbers() {
     // convert Array into Numbers and sort into even and odd
     for(const number of array){
 
-        // check if Array got an empty item
+        // check if Array got an empty item and remove dubble numbers
         if(!number || isNaN(number)){
 
-        } else if (Number(number) % 2 == 0){
+        } else if (Number(number) % 2 == 0 && Number(number) !== evenNumbers[evenNumbers.length-1]){
             evenNumbers.push(Number(number))
-        } else {
+        } else if (Number(number) % 2 !== 0 && Number(number) !== oddNumbers[oddNumbers.length-1]) {
             oddNumbers.push(Number(number))
         }
       
     }
+
+    // add the lists to the HTML file to display
 
     const container = document.getElementById('container')
 
