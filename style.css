@@ -1,0 +1,62 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+background-color: lightgrey;
+border-radius: 20px;
+width: 70%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.input{
+    width: 30%;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+}
+
+.button{
+    margin: 10px; 
+}
+
+.listBox{
+    display: flex; 
+}
+
+.evenListBox{
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-right: solid 3px black;
+}
+
+.oddListBox{
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.oddListPoints{
+   list-style: none; 
+   margin: 5px;
+}
+
+.evenListPoints{
+    list-style: none; 
+    margin: 5px;
+ }

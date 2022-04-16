@@ -6,10 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type = "text/javascript" src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <p>Click the following button to see the function in action</p>  
-    <input id="myNumbers" type="text" placeholder="Enter numbers">
-    <input type = "button" onclick = "getNumbers()" value = "Start"> 
+
+<body class="body">
+
+    <div class="container" id="container">
+
+        <h3>Enter a list of numbers of any length separated by spaces and have them sorted in order by even and odd numbers.</h3>  
+        <input class="input" id="myNumbers" type="text" placeholder="Enter numbers">
+        <input class="button" type = "button" onclick = "getNumbers()" value = "Start"> 
+
+    </div>
+
 </body>
 </html>
