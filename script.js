@@ -3,7 +3,7 @@ function getNumbers() {
 
     
 
-    // get input and split into an Array
+    // get input and split it into an array
     const val = document.getElementById("myNumbers").value;
     const array = val.split(' ');
 
@@ -15,10 +15,10 @@ function getNumbers() {
         return a - b;
     })
 
-    // convert Array into Numbers and sort into even and odd
+    // convert array to numbers and sort by even and odd
     for(const number of array){
 
-        // check if Array got an empty item and remove dubble numbers
+        // check if array contains an empty element and remove doubtful numbers
         if(!number || isNaN(number)){
 
         } else if (Number(number) % 2 == 0 && Number(number) !== evenNumbers[evenNumbers.length-1]){
@@ -29,7 +29,7 @@ function getNumbers() {
       
     }
 
-    // add the lists to the HTML file to display
+    // paste the lists into the HTML file to display them
 
     const container = document.getElementById('container')
 
@@ -39,9 +39,9 @@ function getNumbers() {
     list.setAttribute("class", "listBox")
     container.append(list)
 
-    // create the list of even Numbers in the HTML file
+    // create the list of even numbers in the HTML file
 
-    // remove old list, if creating a new list 
+    // remove old list when a new list is created 
     if(document.getElementById('evenList')){
         document.getElementById('evenList').remove() 
 
@@ -56,7 +56,7 @@ function getNumbers() {
     // create a headline
     const evenDiv = document.createElement('h3')
     evenList.append(evenDiv)
-    evenDiv.innerText = 'List of even Numbers'
+    evenDiv.innerText = 'List of even numbers'
 
     // create the HTML list
     const evenUl = document.createElement('ul')
@@ -71,14 +71,14 @@ function getNumbers() {
     }
 
     
-    // create athe list of odd Numbers in the HTML file
+    // create the list of odd numbers in the HTML file
 
-    // remove old list, if creating a new list
+    // remove old list when a new list is created
     if(document.getElementById('oddList')){
         document.getElementById('oddList').remove()
     }
 
-    // create div for odd list
+    // create div/box for odd list
     const oddList = document.createElement('div')
     oddList.setAttribute("id", "oddList")
     oddList.setAttribute("class", "oddListBox")
@@ -87,7 +87,7 @@ function getNumbers() {
     // create a headline
     const oddDiv = document.createElement('h3')
     oddList.append(oddDiv)
-    oddDiv.innerText = 'List of odd Numbers'
+    oddDiv.innerText = 'List of odd numbers'
 
     // create the HTML list
     const oddUl = document.createElement('ul')
